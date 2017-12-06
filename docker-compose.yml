@@ -1,0 +1,18 @@
+#version: '2'
+#volumes:
+ # vol_nginx:
+
+#networks:
+ # net_nginx:
+
+services:
+  nginx:
+    image: nginx
+    container_name: nginx1
+    volumes:
+      - vol_nginx:/var/www
+    ports:
+      - "5001:80"
+   # networks: 
+      #- net_nginx
+

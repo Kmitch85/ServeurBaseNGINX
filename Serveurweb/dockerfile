@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+LABEL maintener="mitch"
+LABEL description="création image ubuntu avec nano et les outils ethtool"
+
+RUN apt-get update && ap-get install -y ethtool 
